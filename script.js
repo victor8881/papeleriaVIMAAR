@@ -1,15 +1,31 @@
-let boton = document.getElementById("icono");
-let enlaces = document.getElementById("enlaces");
-let contador = 0;
+let ubicacionPrincipal = window.pageYOffset; //0
 
-boton.addEventListener("click", function(e){
-    e.preventDefault();
-    if(contador==0){
-        enlaces.className = ("enlaces dos")
-        contador=1;
+  AOS.init();
+
+window.addEventListener("scroll", function(){
+    let desplazamientoActual = window.pageYOffset; //180
+    if(ubicacionPrincipal >= desplazamientoActual){ // 200 > 180
+        document.getElementsByTagName("nav")[0].style.top = "0px"
     }else{
-        enlaces.classList.remove("dos")
-        enlaces.className = ("enlaces uno")
-        contador=0;
+        document.getElementsByTagName("nav")[0].style.top = "-100px"
     }
+    ubicacionPrincipal= desplazamientoActual; //200
+
+})
+
+// Menu
+
+let enlacesHeader = document.querySelectorAll(".enlaces-header")[0];
+let semaforo = true;
+
+document.querySelectorAll(".hamburguer")[0].addEventListener("click", function(){
+    if(semaforo){
+        document.querySelectorAll(".hamburguer")[0].style.color ="#fff";
+        semaforo= false;
+    }else{
+        document.querySelectorAll(".hamburguer")[0].style.color ="#000";
+        semaforo= true;
+    }
+
+    enlacesHeader.classList.toggle("menudos")
 })
