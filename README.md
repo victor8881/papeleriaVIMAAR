@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PAPELERIA VIMAAR</title>
+    <title>Papeleria VIMAAR</title>
     <link rel="stylesheet" href="STYLE.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -120,7 +120,7 @@
                 </div>
             </section>
             <section class="results-text">
-                <h4>LLama al telefonoque aparese en pantalla </h4>
+                <h4>LLama al telefono  que aparese en pantalla </h4>
                 <p>Lorem, ipsum dolor.</p>
                 <a href="#">Ingrese aquí</a>
             </section>
@@ -166,7 +166,7 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
-    <script src="scrip.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
